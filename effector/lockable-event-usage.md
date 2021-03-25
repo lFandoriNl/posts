@@ -104,7 +104,7 @@ forward({
 
 Осталось реализовать блокирование события пока эффект находиться в процессе выполнения.
 
-Обернем пока событие `sendRequest` в обертку `lockable`
+Обернем пока событие `sendRequest` в обертку `lockable`, ознакомится с которым можно в [первой части](./lockable-event.md)
 
 ```js
 const [lock, unlock, filteredSendRequest] = lockable(sendRequest);
